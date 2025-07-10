@@ -12,8 +12,9 @@ class JogoVelha:
         
         #Jogadores
         self.jogadores = [
-                JogadorIA(self.tabuleiro, Tabuleiro.JOGADOR_0),
-                JogadorHumano(self.tabuleiro, self.screen.buttons, Tabuleiro.JOGADOR_X)
+                JogadorHumano(self.tabuleiro, self.screen.buttons, Tabuleiro.JOGADOR_X),
+                JogadorIA(self.tabuleiro, Tabuleiro.JOGADOR_0)
+                
             ]
         self.id_jogador_corrente = 0
         self.jogador_corrente : Jogador = self.jogadores[self.id_jogador_corrente]
